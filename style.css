@@ -73,3 +73,7 @@ h1 {
         transform: scale(1);
     }
 }
+/* Делаем все маркеры на карте зелеными */
+.leaflet-marker-icon {
+    filter: hue-rotate(90deg) brightness(0.8) saturate(1.5);
+}
