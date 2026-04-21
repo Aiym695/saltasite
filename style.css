@@ -77,3 +77,23 @@ h1 {
 .leaflet-marker-icon {
     filter: hue-rotate(90deg) brightness(0.8) saturate(1.5);
 }
+/* Специальные правила для мобильных устройств */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px; /* Уменьшаем текст заголовка, чтобы он не был огромным */
+        padding: 10px;
+    }
+
+    #map {
+        height: 60vh; /* Уменьшаем карту по высоте, чтобы внизу было место для прокрутки страницы */
+        width: 95%;   /* Делаем небольшие отступы по бокам */
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .modal-content {
+        width: 90%; /* Окно на мобилке будет почти на весь экран */
+        padding: 15px;
+        font-size: 14px;
+    }
+}
