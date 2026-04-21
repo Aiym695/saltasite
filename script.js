@@ -1,6 +1,9 @@
 // 1. Создаем карту (центр смещен к Жетысу, зум 6)
 var map = L.map('map', {
-    minZoom: 5
+    minZoom: 5,
+    tap: L.Browser.mobile, // Улучшает отклик на касания в телефонах
+    dragging: !L.Browser.mobile || L.Browser.mobile, // Позволяет двигать карту
+    wheelZoomControl: false // Чтобы случайно не масштабировать карту при прокрутке страницы
 }).setView([44.0, 78.0], 6);
 
 // 2. Добавляем слой карты
