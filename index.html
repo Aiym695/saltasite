@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Қилы заман топонимдері</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+
+<body>
+
+<h1>«Қилы заман» повесіндегі жер-су атаулары</h1>
+
+<button onclick="openInfo()" class="btn">
+Қосымша топонимдер
+</button>
+
+<div id="map"></div>
+
+<!-- МОДАЛ ТЕРЕЗЕ -->
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <h2 style="text-align: center; color: darkgreen;">Картада нақты көрсетілмеген топонимдер</h2>
+        
+        <p><b>Көктөбе, Көкбұлақ, Көкжота</b> – Шығарма мәтініндегі түр-түске байланысты атаулар. Құрамындағы «Көк» сөзі тек түсті ғана емес, көне түркі тілінде «тегі, руы» деген мағынаны да білдірген.</p>
+        
+        <p><b>Дөңгелек саз, Үшқарқара, Сырт, Тұз</b> – Повесте жиын өткен жерлер ретінде аталады (нақты сипаттамалары берілмеген).</p>
+
+        <button onclick="closeInfo()" class="btn">Жабу</button>
+    </div>
+</div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
